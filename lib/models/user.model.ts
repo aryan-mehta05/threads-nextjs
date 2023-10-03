@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { deflate } from "zlib";
 
 const userSchema = new mongoose.Schema({
   id: { type: String, required: true },
