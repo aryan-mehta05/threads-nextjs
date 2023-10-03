@@ -13,7 +13,7 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Threads",
+  title: "Threads || Aryan Mehta",
   description: "A Next.js 13 Meta Threads Application by Aryan Mehta",
 };
 
