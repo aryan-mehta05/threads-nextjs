@@ -19,7 +19,7 @@ export async function fetchUser(userId: string) {
   } catch (error: any) {
     throw new Error(`Failed to fetch user: ${error.message}`);
   }
-}
+};
 
 interface UserActionsProps {
   userId: string;
@@ -59,7 +59,7 @@ export async function updateUser({
   } catch (error: any) {
     throw new Error(`Failed to create/update user: ${error.message}`);
   }
-}
+};
 
 export async function fetchUserPosts(userId: string) {
   try {
@@ -91,7 +91,7 @@ export async function fetchUserPosts(userId: string) {
     console.error("Error fetching user threads:", error);
     throw error;
   }
-}
+};
 
 // Almost similar to Thead (search + pagination) and Community (search + pagination)
 export async function fetchUsers({
@@ -150,7 +150,7 @@ export async function fetchUsers({
     console.error("Error fetching users:", error);
     throw error;
   }
-}
+};
 
 export async function getActivity(userId: string) {
   try {
@@ -179,4 +179,4 @@ export async function getActivity(userId: string) {
     console.error("Error fetching replies: ", error);
     throw error;
   }
-}
+};
