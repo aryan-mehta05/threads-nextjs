@@ -22,7 +22,6 @@ import { isBase64Image } from "@/lib/utils";
 import { useUploadThing } from "@/lib/uploadthing";
 import { userValidation } from "@/lib/validations/user";
 import { updateUser } from "@/lib/actions/user.actions";
-import path from "path";
 
 interface AccountProfileProps {
   user: {
