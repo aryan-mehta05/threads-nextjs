@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 
+import Favicon from "@/app/favicon.ico";
 import Topbar from "@/components/shared/Topbar";
 import Bottombar from "@/components/shared/Bottombar";
 import LeftSidebar from "@/components/shared/LeftSidebar";
@@ -15,6 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Threads || Aryan Mehta",
   description: "A Next.js 13 Meta Threads Application by Aryan Mehta",
+  icons: [{ rel: 'icon', url: Favicon.src }]
 };
 
 export default function RootLayout({
@@ -24,9 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider
-      // appearance={{
-      //   baseTheme: dark,
-      // }}
+      appearance={{
+        baseTheme: dark,
+      }}
     >
       <html lang='en'>
         <body className={inter.className}>
